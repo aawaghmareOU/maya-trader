@@ -1,0 +1,25 @@
+# Personal config — never commit this
+config.py
+
+# Databases & logs
+*.db
+*.log
+*.lock
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env
+
+# Reports & backtest output
+reports/
+backtest_results.html
+
+# OS
+.DS_Store
+Thumbs.db

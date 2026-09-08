@@ -1,0 +1,452 @@
+2026-09-08 00:38:01,666 [INFO] database: Database initialised
+2026-09-08 00:38:01,666 [INFO] __main__: [BOT] MAYA Trading Bot starting in [PAPER] mode
+2026-09-08 00:38:01,666 [INFO] __main__: [BOT] Watching 10 symbols | Candle: 15m | Confidence: 65%
+2026-09-08 00:38:01,666 [INFO] broker_yahoo: OK: Yahoo Finance paper broker initialised ($50,000 virtual capital)
+2026-09-08 00:38:01,666 [INFO] __main__: [BOT] Scanning every 60s. Press Ctrl+C to stop.
+2026-09-08 00:38:01,666 [INFO] __main__: --- Tick started ---
+2026-09-08 00:38:01,666 [INFO] __main__: [BOT] Daily counters reset
+2026-09-08 00:38:09,236 [INFO] broker_yahoo: [NVDA] Price: $230.35 (130 bars, 15m)
+2026-09-08 00:38:09,237 [INFO] regime_detector: [Regime] [NVDA] TRENDING_DOWN conf=80% RSI=38.3 vol_ratio=0.91 trend_str=0.100
+2026-09-08 00:38:09,237 [INFO] strategy: [NVDA] HOLD | Conf=35% | Regime=TRENDING_DOWN | RSI=38.3 | 2/5 conditions
+2026-09-08 00:38:09,238 [ERROR] __main__: [NVDA] Error: Object of type bool is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Documents\maya-trader-public\bot.py", line 126, in tick
+    self._process_symbol(symbol, "stock", broker, portfolio_value)
+  File "C:\Users\ASUS\Documents\maya-trader-public\bot.py", line 183, in _process_symbol
+    log_signal(
+  File "C:\Users\ASUS\Documents\maya-trader-public\database.py", line 139, in log_signal
+    json.dumps(conditions) if conditions else None)
+  File "C:\Program Files\Python39\lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python39\site-packages\frozendict\__init__.py", line 32, in default
+    return BaseJsonEncoder.default(
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bool is not JSON serializable
+2026-09-08 00:38:09,367 [INFO] broker_yahoo: [AAPL] Price: $319.99 (130 bars, 15m)
+2026-09-08 00:38:09,368 [INFO] regime_detector: [Regime] [AAPL] TRENDING_DOWN conf=99% RSI=45.5 vol_ratio=0.92 trend_str=0.173
+2026-09-08 00:38:09,368 [INFO] strategy: [AAPL] HOLD | Conf=34% | Regime=TRENDING_DOWN | RSI=45.5 | 2/5 conditions
+2026-09-08 00:38:09,368 [ERROR] __main__: [AAPL] Error: Object of type bool is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Documents\maya-trader-public\bot.py", line 126, in tick
+    self._process_symbol(symbol, "stock", broker, portfolio_value)
+  File "C:\Users\ASUS\Documents\maya-trader-public\bot.py", line 183, in _process_symbol
+    log_signal(
+  File "C:\Users\ASUS\Documents\maya-trader-public\database.py", line 139, in log_signal
+    json.dumps(conditions) if conditions else None)
+  File "C:\Program Files\Python39\lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python39\site-packages\frozendict\__init__.py", line 32, in default
+    return BaseJsonEncoder.default(
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bool is not JSON serializable
+2026-09-08 00:38:09,470 [INFO] broker_yahoo: [MSFT] Price: $499.68 (130 bars, 15m)
+2026-09-08 00:38:09,471 [INFO] regime_detector: [Regime] [MSFT] TRENDING_DOWN conf=99% RSI=36.5 vol_ratio=1.00 trend_str=0.231
+2026-09-08 00:38:09,471 [INFO] strategy: [MSFT] HOLD | Conf=45% | Regime=TRENDING_DOWN | RSI=36.5 | 2/5 conditions
+2026-09-08 00:38:09,471 [ERROR] __main__: [MSFT] Error: Object of type bool is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Documents\maya-trader-public\bot.py", line 126, in tick
+    self._process_symbol(symbol, "stock", broker, portfolio_value)
+  File "C:\Users\ASUS\Documents\maya-trader-public\bot.py", line 183, in _process_symbol
+    log_signal(
+  File "C:\Users\ASUS\Documents\maya-trader-public\database.py", line 139, in log_signal
+    json.dumps(conditions) if conditions else None)
+  File "C:\Program Files\Python39\lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python39\site-packages\frozendict\__init__.py", line 32, in default
+    return BaseJsonEncoder.default(
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bool is not JSON serializable
+2026-09-08 00:38:09,592 [INFO] broker_yahoo: [GOOGL] Price: $338.50 (130 bars, 15m)
+2026-09-08 00:38:09,593 [INFO] regime_detector: [Regime] [GOOGL] RANGING conf=80% RSI=48.5 vol_ratio=1.17 trend_str=0.060
+2026-09-08 00:38:09,593 [INFO] strategy: [GOOGL] HOLD | Conf=34% | Regime=RANGING | RSI=48.5 | 2/5 conditions
+2026-09-08 00:38:09,593 [ERROR] __main__: [GOOGL] Error: Object of type bool is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Documents\maya-trader-public\bot.py", line 126, in tick
+    self._process_symbol(symbol, "stock", broker, portfolio_value)
+  File "C:\Users\ASUS\Documents\maya-trader-public\bot.py", line 183, in _process_symbol
+    log_signal(
+  File "C:\Users\ASUS\Documents\maya-trader-public\database.py", line 139, in log_signal
+    json.dumps(conditions) if conditions else None)
+  File "C:\Program Files\Python39\lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python39\site-packages\frozendict\__init__.py", line 32, in default
+    return BaseJsonEncoder.default(
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bool is not JSON serializable
+2026-09-08 00:38:09,693 [INFO] broker_yahoo: [AMZN] Price: $258.51 (130 bars, 15m)
+2026-09-08 00:38:09,694 [INFO] regime_detector: [Regime] [AMZN] TRENDING_UP conf=57% RSI=79.3 vol_ratio=0.75 trend_str=0.132
+2026-09-08 00:38:09,694 [INFO] strategy: [AMZN] HOLD | Conf=53% | Regime=TRENDING_UP | RSI=79.3 | 3/5 conditions
+2026-09-08 00:38:09,694 [ERROR] __main__: [AMZN] Error: Object of type bool is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Documents\maya-trader-public\bot.py", line 126, in tick
+    self._process_symbol(symbol, "stock", broker, portfolio_value)
+  File "C:\Users\ASUS\Documents\maya-trader-public\bot.py", line 183, in _process_symbol
+    log_signal(
+  File "C:\Users\ASUS\Documents\maya-trader-public\database.py", line 139, in log_signal
+    json.dumps(conditions) if conditions else None)
+  File "C:\Program Files\Python39\lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python39\site-packages\frozendict\__init__.py", line 32, in default
+    return BaseJsonEncoder.default(
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bool is not JSON serializable
+2026-09-08 00:38:09,797 [INFO] broker_yahoo: [TSLA] Price: $353.95 (130 bars, 15m)
+2026-09-08 00:38:09,798 [INFO] regime_detector: [Regime] [TSLA] TRENDING_DOWN conf=60% RSI=66.0 vol_ratio=0.88 trend_str=0.488
+2026-09-08 00:38:09,798 [INFO] strategy: [TSLA] HOLD | Conf=15% | Regime=TRENDING_DOWN | RSI=66.0 | 2/5 conditions
+2026-09-08 00:38:09,799 [ERROR] __main__: [TSLA] Error: Object of type bool is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Documents\maya-trader-public\bot.py", line 126, in tick
+    self._process_symbol(symbol, "stock", broker, portfolio_value)
+  File "C:\Users\ASUS\Documents\maya-trader-public\bot.py", line 183, in _process_symbol
+    log_signal(
+  File "C:\Users\ASUS\Documents\maya-trader-public\database.py", line 139, in log_signal
+    json.dumps(conditions) if conditions else None)
+  File "C:\Program Files\Python39\lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python39\site-packages\frozendict\__init__.py", line 32, in default
+    return BaseJsonEncoder.default(
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bool is not JSON serializable
+2026-09-08 00:38:09,872 [INFO] broker_yahoo: [META] Price: $616.75 (130 bars, 15m)
+2026-09-08 00:38:09,873 [INFO] regime_detector: [Regime] [META] TRENDING_UP conf=99% RSI=65.3 vol_ratio=1.02 trend_str=0.264
+2026-09-08 00:38:09,873 [INFO] strategy: [META] BUY | Conf=58% | Regime=TRENDING_UP | RSI=65.3 | 5/5 conditions
+2026-09-08 00:38:09,874 [ERROR] __main__: [META] Error: Object of type bool is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Documents\maya-trader-public\bot.py", line 126, in tick
+    self._process_symbol(symbol, "stock", broker, portfolio_value)
+  File "C:\Users\ASUS\Documents\maya-trader-public\bot.py", line 183, in _process_symbol
+    log_signal(
+  File "C:\Users\ASUS\Documents\maya-trader-public\database.py", line 139, in log_signal
+    json.dumps(conditions) if conditions else None)
+  File "C:\Program Files\Python39\lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python39\site-packages\frozendict\__init__.py", line 32, in default
+    return BaseJsonEncoder.default(
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bool is not JSON serializable
+2026-09-08 00:38:10,034 [INFO] broker_yahoo: [QCOM] Price: $168.78 (130 bars, 15m)
+2026-09-08 00:38:10,035 [INFO] regime_detector: [Regime] [QCOM] TRENDING_DOWN conf=99% RSI=51.7 vol_ratio=0.89 trend_str=0.163
+2026-09-08 00:38:10,035 [INFO] strategy: [QCOM] HOLD | Conf=24% | Regime=TRENDING_DOWN | RSI=51.7 | 2/5 conditions
+2026-09-08 00:38:10,036 [ERROR] __main__: [QCOM] Error: Object of type bool is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Documents\maya-trader-public\bot.py", line 126, in tick
+    self._process_symbol(symbol, "stock", broker, portfolio_value)
+  File "C:\Users\ASUS\Documents\maya-trader-public\bot.py", line 183, in _process_symbol
+    log_signal(
+  File "C:\Users\ASUS\Documents\maya-trader-public\database.py", line 139, in log_signal
+    json.dumps(conditions) if conditions else None)
+  File "C:\Program Files\Python39\lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python39\site-packages\frozendict\__init__.py", line 32, in default
+    return BaseJsonEncoder.default(
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bool is not JSON serializable
+2026-09-08 00:38:10,139 [INFO] broker_yahoo: [MU] Price: $1014.95 (130 bars, 15m)
+2026-09-08 00:38:10,140 [INFO] regime_detector: [Regime] [MU] TRENDING_UP conf=99% RSI=61.7 vol_ratio=1.15 trend_str=0.676
+2026-09-08 00:38:10,141 [INFO] strategy: [MU] HOLD | Conf=33% | Regime=TRENDING_UP | RSI=61.7 | 4/5 conditions
+2026-09-08 00:38:10,141 [ERROR] __main__: [MU] Error: Object of type bool is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Documents\maya-trader-public\bot.py", line 126, in tick
+    self._process_symbol(symbol, "stock", broker, portfolio_value)
+  File "C:\Users\ASUS\Documents\maya-trader-public\bot.py", line 183, in _process_symbol
+    log_signal(
+  File "C:\Users\ASUS\Documents\maya-trader-public\database.py", line 139, in log_signal
+    json.dumps(conditions) if conditions else None)
+  File "C:\Program Files\Python39\lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python39\site-packages\frozendict\__init__.py", line 32, in default
+    return BaseJsonEncoder.default(
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bool is not JSON serializable
+2026-09-08 00:38:10,245 [INFO] broker_yahoo: [TSM] Price: $428.58 (130 bars, 15m)
+2026-09-08 00:38:10,246 [INFO] regime_detector: [Regime] [TSM] TRENDING_UP conf=99% RSI=58.7 vol_ratio=0.94 trend_str=0.343
+2026-09-08 00:38:10,246 [INFO] strategy: [TSM] HOLD | Conf=21% | Regime=TRENDING_UP | RSI=58.7 | 4/5 conditions
+2026-09-08 00:38:10,246 [ERROR] __main__: [TSM] Error: Object of type bool is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Documents\maya-trader-public\bot.py", line 126, in tick
+    self._process_symbol(symbol, "stock", broker, portfolio_value)
+  File "C:\Users\ASUS\Documents\maya-trader-public\bot.py", line 183, in _process_symbol
+    log_signal(
+  File "C:\Users\ASUS\Documents\maya-trader-public\database.py", line 139, in log_signal
+    json.dumps(conditions) if conditions else None)
+  File "C:\Program Files\Python39\lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python39\site-packages\frozendict\__init__.py", line 32, in default
+    return BaseJsonEncoder.default(
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bool is not JSON serializable
+2026-09-08 00:38:10,247 [INFO] __main__: --- Tick complete ---
+2026-09-08 00:38:10,247 [INFO] __main__: [BOT] Sleeping 60s until next scan
+2026-09-08 00:39:10,254 [INFO] __main__: --- Tick started ---
+2026-09-08 00:39:10,352 [INFO] broker_yahoo: [NVDA] Price: $230.35 (130 bars, 15m)
+2026-09-08 00:39:10,353 [INFO] regime_detector: [Regime] [NVDA] TRENDING_DOWN conf=80% RSI=38.3 vol_ratio=0.91 trend_str=0.100
+2026-09-08 00:39:10,353 [INFO] strategy: [NVDA] HOLD | Conf=35% | Regime=TRENDING_DOWN | RSI=38.3 | 2/5 conditions
+2026-09-08 00:39:10,353 [ERROR] __main__: [NVDA] Error: Object of type bool is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Documents\maya-trader-public\bot.py", line 126, in tick
+    self._process_symbol(symbol, "stock", broker, portfolio_value)
+  File "C:\Users\ASUS\Documents\maya-trader-public\bot.py", line 183, in _process_symbol
+    log_signal(
+  File "C:\Users\ASUS\Documents\maya-trader-public\database.py", line 139, in log_signal
+    json.dumps(conditions) if conditions else None)
+  File "C:\Program Files\Python39\lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python39\site-packages\frozendict\__init__.py", line 32, in default
+    return BaseJsonEncoder.default(
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bool is not JSON serializable
+2026-09-08 00:39:10,428 [INFO] broker_yahoo: [AAPL] Price: $319.99 (130 bars, 15m)
+2026-09-08 00:39:10,429 [INFO] regime_detector: [Regime] [AAPL] TRENDING_DOWN conf=99% RSI=45.5 vol_ratio=0.92 trend_str=0.173
+2026-09-08 00:39:10,429 [INFO] strategy: [AAPL] HOLD | Conf=34% | Regime=TRENDING_DOWN | RSI=45.5 | 2/5 conditions
+2026-09-08 00:39:10,429 [ERROR] __main__: [AAPL] Error: Object of type bool is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Documents\maya-trader-public\bot.py", line 126, in tick
+    self._process_symbol(symbol, "stock", broker, portfolio_value)
+  File "C:\Users\ASUS\Documents\maya-trader-public\bot.py", line 183, in _process_symbol
+    log_signal(
+  File "C:\Users\ASUS\Documents\maya-trader-public\database.py", line 139, in log_signal
+    json.dumps(conditions) if conditions else None)
+  File "C:\Program Files\Python39\lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python39\site-packages\frozendict\__init__.py", line 32, in default
+    return BaseJsonEncoder.default(
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bool is not JSON serializable
+2026-09-08 00:39:10,499 [INFO] broker_yahoo: [MSFT] Price: $499.68 (130 bars, 15m)
+2026-09-08 00:39:10,500 [INFO] regime_detector: [Regime] [MSFT] TRENDING_DOWN conf=99% RSI=36.5 vol_ratio=1.00 trend_str=0.231
+2026-09-08 00:39:10,500 [INFO] strategy: [MSFT] HOLD | Conf=45% | Regime=TRENDING_DOWN | RSI=36.5 | 2/5 conditions
+2026-09-08 00:39:10,501 [ERROR] __main__: [MSFT] Error: Object of type bool is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Documents\maya-trader-public\bot.py", line 126, in tick
+    self._process_symbol(symbol, "stock", broker, portfolio_value)
+  File "C:\Users\ASUS\Documents\maya-trader-public\bot.py", line 183, in _process_symbol
+    log_signal(
+  File "C:\Users\ASUS\Documents\maya-trader-public\database.py", line 139, in log_signal
+    json.dumps(conditions) if conditions else None)
+  File "C:\Program Files\Python39\lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python39\site-packages\frozendict\__init__.py", line 32, in default
+    return BaseJsonEncoder.default(
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bool is not JSON serializable
+2026-09-08 00:39:10,579 [INFO] broker_yahoo: [GOOGL] Price: $338.50 (130 bars, 15m)
+2026-09-08 00:39:10,580 [INFO] regime_detector: [Regime] [GOOGL] RANGING conf=80% RSI=48.5 vol_ratio=1.17 trend_str=0.060
+2026-09-08 00:39:10,580 [INFO] strategy: [GOOGL] HOLD | Conf=34% | Regime=RANGING | RSI=48.5 | 2/5 conditions
+2026-09-08 00:39:10,581 [ERROR] __main__: [GOOGL] Error: Object of type bool is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Documents\maya-trader-public\bot.py", line 126, in tick
+    self._process_symbol(symbol, "stock", broker, portfolio_value)
+  File "C:\Users\ASUS\Documents\maya-trader-public\bot.py", line 183, in _process_symbol
+    log_signal(
+  File "C:\Users\ASUS\Documents\maya-trader-public\database.py", line 139, in log_signal
+    json.dumps(conditions) if conditions else None)
+  File "C:\Program Files\Python39\lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python39\site-packages\frozendict\__init__.py", line 32, in default
+    return BaseJsonEncoder.default(
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bool is not JSON serializable
+2026-09-08 00:39:10,653 [INFO] broker_yahoo: [AMZN] Price: $258.51 (130 bars, 15m)
+2026-09-08 00:39:10,654 [INFO] regime_detector: [Regime] [AMZN] TRENDING_UP conf=57% RSI=79.3 vol_ratio=0.75 trend_str=0.132
+2026-09-08 00:39:10,654 [INFO] strategy: [AMZN] HOLD | Conf=53% | Regime=TRENDING_UP | RSI=79.3 | 3/5 conditions
+2026-09-08 00:39:10,654 [ERROR] __main__: [AMZN] Error: Object of type bool is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Documents\maya-trader-public\bot.py", line 126, in tick
+    self._process_symbol(symbol, "stock", broker, portfolio_value)
+  File "C:\Users\ASUS\Documents\maya-trader-public\bot.py", line 183, in _process_symbol
+    log_signal(
+  File "C:\Users\ASUS\Documents\maya-trader-public\database.py", line 139, in log_signal
+    json.dumps(conditions) if conditions else None)
+  File "C:\Program Files\Python39\lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python39\site-packages\frozendict\__init__.py", line 32, in default
+    return BaseJsonEncoder.default(
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bool is not JSON serializable
+2026-09-08 00:39:10,722 [INFO] broker_yahoo: [TSLA] Price: $353.95 (130 bars, 15m)
+2026-09-08 00:39:10,723 [INFO] regime_detector: [Regime] [TSLA] TRENDING_DOWN conf=60% RSI=66.0 vol_ratio=0.88 trend_str=0.488
+2026-09-08 00:39:10,723 [INFO] strategy: [TSLA] HOLD | Conf=15% | Regime=TRENDING_DOWN | RSI=66.0 | 2/5 conditions
+2026-09-08 00:39:10,724 [ERROR] __main__: [TSLA] Error: Object of type bool is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Documents\maya-trader-public\bot.py", line 126, in tick
+    self._process_symbol(symbol, "stock", broker, portfolio_value)
+  File "C:\Users\ASUS\Documents\maya-trader-public\bot.py", line 183, in _process_symbol
+    log_signal(
+  File "C:\Users\ASUS\Documents\maya-trader-public\database.py", line 139, in log_signal
+    json.dumps(conditions) if conditions else None)
+  File "C:\Program Files\Python39\lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python39\site-packages\frozendict\__init__.py", line 32, in default
+    return BaseJsonEncoder.default(
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bool is not JSON serializable
+2026-09-08 00:39:10,795 [INFO] broker_yahoo: [META] Price: $616.75 (130 bars, 15m)
+2026-09-08 00:39:10,796 [INFO] regime_detector: [Regime] [META] TRENDING_UP conf=99% RSI=65.3 vol_ratio=1.02 trend_str=0.264
+2026-09-08 00:39:10,796 [INFO] strategy: [META] BUY | Conf=58% | Regime=TRENDING_UP | RSI=65.3 | 5/5 conditions
+2026-09-08 00:39:10,796 [ERROR] __main__: [META] Error: Object of type bool is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Documents\maya-trader-public\bot.py", line 126, in tick
+    self._process_symbol(symbol, "stock", broker, portfolio_value)
+  File "C:\Users\ASUS\Documents\maya-trader-public\bot.py", line 183, in _process_symbol
+    log_signal(
+  File "C:\Users\ASUS\Documents\maya-trader-public\database.py", line 139, in log_signal
+    json.dumps(conditions) if conditions else None)
+  File "C:\Program Files\Python39\lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python39\site-packages\frozendict\__init__.py", line 32, in default
+    return BaseJsonEncoder.default(
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bool is not JSON serializable
+2026-09-08 00:39:10,947 [INFO] broker_yahoo: [QCOM] Price: $168.78 (130 bars, 15m)
+2026-09-08 00:39:10,948 [INFO] regime_detector: [Regime] [QCOM] TRENDING_DOWN conf=99% RSI=51.7 vol_ratio=0.89 trend_str=0.163
+2026-09-08 00:39:10,948 [INFO] strategy: [QCOM] HOLD | Conf=24% | Regime=TRENDING_DOWN | RSI=51.7 | 2/5 conditions
+2026-09-08 00:39:10,948 [ERROR] __main__: [QCOM] Error: Object of type bool is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Documents\maya-trader-public\bot.py", line 126, in tick
+    self._process_symbol(symbol, "stock", broker, portfolio_value)
+  File "C:\Users\ASUS\Documents\maya-trader-public\bot.py", line 183, in _process_symbol
+    log_signal(
+  File "C:\Users\ASUS\Documents\maya-trader-public\database.py", line 139, in log_signal
+    json.dumps(conditions) if conditions else None)
+  File "C:\Program Files\Python39\lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python39\site-packages\frozendict\__init__.py", line 32, in default
+    return BaseJsonEncoder.default(
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bool is not JSON serializable
+2026-09-08 00:39:11,021 [INFO] broker_yahoo: [MU] Price: $1014.95 (130 bars, 15m)
+2026-09-08 00:39:11,022 [INFO] regime_detector: [Regime] [MU] TRENDING_UP conf=99% RSI=61.7 vol_ratio=1.15 trend_str=0.676
+2026-09-08 00:39:11,022 [INFO] strategy: [MU] HOLD | Conf=33% | Regime=TRENDING_UP | RSI=61.7 | 4/5 conditions
+2026-09-08 00:39:11,023 [ERROR] __main__: [MU] Error: Object of type bool is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Documents\maya-trader-public\bot.py", line 126, in tick
+    self._process_symbol(symbol, "stock", broker, portfolio_value)
+  File "C:\Users\ASUS\Documents\maya-trader-public\bot.py", line 183, in _process_symbol
+    log_signal(
+  File "C:\Users\ASUS\Documents\maya-trader-public\database.py", line 139, in log_signal
+    json.dumps(conditions) if conditions else None)
+  File "C:\Program Files\Python39\lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python39\site-packages\frozendict\__init__.py", line 32, in default
+    return BaseJsonEncoder.default(
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bool is not JSON serializable
+2026-09-08 00:39:11,091 [INFO] broker_yahoo: [TSM] Price: $428.58 (130 bars, 15m)
+2026-09-08 00:39:11,092 [INFO] regime_detector: [Regime] [TSM] TRENDING_UP conf=99% RSI=58.7 vol_ratio=0.94 trend_str=0.343
+2026-09-08 00:39:11,092 [INFO] strategy: [TSM] HOLD | Conf=21% | Regime=TRENDING_UP | RSI=58.7 | 4/5 conditions
+2026-09-08 00:39:11,092 [ERROR] __main__: [TSM] Error: Object of type bool is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Documents\maya-trader-public\bot.py", line 126, in tick
+    self._process_symbol(symbol, "stock", broker, portfolio_value)
+  File "C:\Users\ASUS\Documents\maya-trader-public\bot.py", line 183, in _process_symbol
+    log_signal(
+  File "C:\Users\ASUS\Documents\maya-trader-public\database.py", line 139, in log_signal
+    json.dumps(conditions) if conditions else None)
+  File "C:\Program Files\Python39\lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python39\site-packages\frozendict\__init__.py", line 32, in default
+    return BaseJsonEncoder.default(
+  File "C:\Program Files\Python39\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bool is not JSON serializable
+2026-09-08 00:39:11,093 [INFO] __main__: --- Tick complete ---
+2026-09-08 00:39:11,093 [INFO] __main__: [BOT] Sleeping 60s until next scan
